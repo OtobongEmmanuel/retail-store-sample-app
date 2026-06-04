@@ -7,6 +7,8 @@ output "result" {
   value = {
     environment-name = var.environment_name
     created-by       = "retail-store-sample-app"
+    Project          = "karatu-2025-capstone"
   }
+
   description = "Computed tag results"
 }
