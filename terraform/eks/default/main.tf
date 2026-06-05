@@ -50,6 +50,8 @@ module "retail_app_eks" {
     helm = helm
   }
 
+  cluster_name = "project-bedrock-cluster"
+
   environment_name      = var.environment_name
   cluster_version       = "1.34"
   vpc_id                = module.vpc.inner.vpc_id
