@@ -6,7 +6,7 @@ module "eks_cluster" {
     kubernetes = kubernetes.cluster
   }
 
-  cluster_name                   = var.environment_name
+  cluster_name                   = var.cluster_name
   cluster_version                = var.cluster_version
   cluster_endpoint_public_access = true
 
