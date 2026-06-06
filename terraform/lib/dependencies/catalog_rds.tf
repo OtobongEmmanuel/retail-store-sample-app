@@ -17,12 +17,13 @@ module "catalog_rds" {
 
   allowed_security_groups = concat(var.allowed_security_group_ids, [var.catalog_security_group_id])
 
-  master_password        = random_string.catalog_db_master.result
-  create_random_password = false
-  database_name          = "catalog"
-  storage_encrypted      = true
-  apply_immediately      = true
-  skip_final_snapshot    = true
+  master_password         = random_string.catalog_db_master.result
+  create_random_password  = false
+  database_name           = "catalog"
+  storage_encrypted       = true
+  apply_immediately       = true
+  skip_final_snapshot     = true
+  backup_retention_period = 1
 
   create_db_parameter_group = true
   db_parameter_group_name   = "${var.environment_name}-catalog"

@@ -16,12 +16,13 @@ module "orders_rds" {
 
   allowed_security_groups = concat(var.allowed_security_group_ids, [var.orders_security_group_id])
 
-  master_password        = random_string.orders_db_master.result
-  create_random_password = false
-  database_name          = "orders"
-  storage_encrypted      = true
-  apply_immediately      = true
-  skip_final_snapshot    = true
+  master_password         = random_string.orders_db_master.result
+  create_random_password  = false
+  database_name           = "orders"
+  storage_encrypted       = true
+  apply_immediately       = true
+  skip_final_snapshot     = true
+  backup_retention_period = 1
 
   create_db_parameter_group = true
   db_parameter_group_name   = "${var.environment_name}-orders"
