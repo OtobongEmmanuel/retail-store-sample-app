@@ -1,39 +1,48 @@
-module "catalog_rds" {
-  source  = "terraform-aws-modules/rds-aurora/aws"
-  version = "7.7.1"
+resource "aws_db_instance" "catalog_db" {
+  identifier     = "${var.environment_name}-catalog"
+  engine         = "mysql"
+  engine_version = "8.4.8"
+  instance_class = "db.t4g.micro"
 
-  name                        = "${var.environment_name}-catalog"
-  engine                      = "aurora-mysql"
-  engine_version              = "8.0"
-  instance_class              = "db.t3.medium"
-  allow_major_version_upgrade = true
+  allocated_storage = 20
+  storage_type      = "gp2"
 
-  instances = {
-    one = {}
-  }
+  db_name  = "catalog"
+  username = "catalogadmin"
+  password = random_string.catalog_db_master.result
 
-  vpc_id  = var.vpc_id
-  subnets = var.subnet_ids
+  db_subnet_group_name   = aws_db_subnet_group.catalog.name
+  vpc_security_group_ids = [aws_security_group.catalog_rds.id]
 
-  allowed_security_groups = concat(var.allowed_security_group_ids, [var.catalog_security_group_id])
-
-  master_password         = random_string.catalog_db_master.result
-  create_random_password  = false
-  database_name           = "catalog"
-  storage_encrypted       = true
-  apply_immediately       = true
+  publicly_accessible     = false
   skip_final_snapshot     = true
   backup_retention_period = 1
 
-  create_db_parameter_group = true
-  db_parameter_group_name   = "${var.environment_name}-catalog"
-  db_parameter_group_family = "aurora-mysql8.0"
+  tags = var.tags
+}
 
-  create_db_cluster_parameter_group = true
-  db_cluster_parameter_group_name   = "${var.environment_name}-catalog"
-  db_cluster_parameter_group_family = "aurora-mysql8.0"
+resource "aws_db_subnet_group" "catalog" {
+  name       = "${var.environment_name}-catalog-rds"
+  subnet_ids = var.subnet_ids
 
   tags = var.tags
+}
+
+resource "aws_security_group" "catalog_rds" {
+  name   = "${var.environment_name}-catalog-rds"
+  vpc_id = var.vpc_id
+
+  tags = var.tags
+}
+
+resource "aws_security_group_rule" "catalog_rds_ingress" {
+  type      = "ingress"
+  from_port = 3306
+  to_port   = 3306
+  protocol  = "tcp"
+
+  security_group_id        = aws_security_group.catalog_rds.id
+  source_security_group_id = var.catalog_security_group_id
 }
 
 resource "random_string" "catalog_db_master" {

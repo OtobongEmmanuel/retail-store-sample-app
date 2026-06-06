@@ -1,38 +1,49 @@
-module "orders_rds" {
-  source  = "terraform-aws-modules/rds-aurora/aws"
-  version = "7.7.1"
+resource "aws_db_instance" "orders_db" {
+  identifier     = "${var.environment_name}-orders"
+  engine         = "postgres"
+  engine_version = "18.3"
 
-  name           = "${var.environment_name}-orders"
-  engine         = "aurora-postgresql"
-  engine_version = "15.10"
-  instance_class = "db.t3.medium"
+  instance_class = "db.t4g.micro"
 
-  instances = {
-    one = {}
-  }
+  allocated_storage = 20
+  storage_type      = "gp2"
 
-  vpc_id  = var.vpc_id
-  subnets = var.subnet_ids
+  db_name  = "orders"
+  username = "ordersadmin"
+  password = random_string.orders_db_master.result
 
-  allowed_security_groups = concat(var.allowed_security_group_ids, [var.orders_security_group_id])
+  db_subnet_group_name   = aws_db_subnet_group.orders.name
+  vpc_security_group_ids = [aws_security_group.orders_rds.id]
 
-  master_password         = random_string.orders_db_master.result
-  create_random_password  = false
-  database_name           = "orders"
-  storage_encrypted       = true
-  apply_immediately       = true
+  publicly_accessible     = false
   skip_final_snapshot     = true
   backup_retention_period = 1
 
-  create_db_parameter_group = true
-  db_parameter_group_name   = "${var.environment_name}-orders"
-  db_parameter_group_family = "aurora-postgresql15"
+  tags = var.tags
+}
 
-  create_db_cluster_parameter_group = true
-  db_cluster_parameter_group_name   = "${var.environment_name}-orders"
-  db_cluster_parameter_group_family = "aurora-postgresql15"
+resource "aws_db_subnet_group" "orders" {
+  name       = "${var.environment_name}-orders-rds"
+  subnet_ids = var.subnet_ids
 
   tags = var.tags
+}
+
+resource "aws_security_group" "orders_rds" {
+  name   = "${var.environment_name}-orders-rds"
+  vpc_id = var.vpc_id
+
+  tags = var.tags
+}
+
+resource "aws_security_group_rule" "orders_rds_ingress" {
+  type      = "ingress"
+  from_port = 5432
+  to_port   = 5432
+  protocol  = "tcp"
+
+  security_group_id        = aws_security_group.orders_rds.id
+  source_security_group_id = var.orders_security_group_id
 }
 
 resource "random_string" "orders_db_master" {

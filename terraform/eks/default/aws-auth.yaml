@@ -1,0 +1,30 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::099875620094:role/managed-nodegroup-1-eks-node-group-20260605190836343700000016
+      groups:
+      - system:bootstrappers
+      - system:nodes
+      username: system:node:{{EC2PrivateDNSName}}
+    - rolearn: arn:aws:iam::099875620094:role/managed-nodegroup-2-eks-node-group-20260605190834888200000015
+      groups:
+      - system:bootstrappers
+      - system:nodes
+      username: system:node:{{EC2PrivateDNSName}}
+    - rolearn: arn:aws:iam::099875620094:role/managed-nodegroup-3-eks-node-group-20260605190833497500000014
+      groups:
+      - system:bootstrappers
+      - system:nodes
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - userarn: arn:aws:iam::099875620094:user/bedrock-dev-view
+      username: bedrock-dev-view
+      groups:
+        - view
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2026-06-05T19:19:57Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1182"
+  uid: 0c4c315e-91ab-43bd-97aa-26baf80b108c
