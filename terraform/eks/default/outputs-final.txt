@@ -1,0 +1,7 @@
+assets_bucket_name = "bedrock-assets-alt-soe-025-4655"
+cluster_endpoint = "https://7288279B53E5D19052E3AC62F62F5592.gr7.us-east-1.eks.amazonaws.com"
+cluster_name = "project-bedrock-cluster"
+configure_kubectl = "aws eks --region us-east-1 update-kubeconfig --name project-bedrock-cluster"
+region = "us-east-1"
+retail_app_url = "LoadBalancer provisioning - run: kubectl get svc -n ui ui"
+vpc_id = "vpc-0b51d5c3e0ba9788b"

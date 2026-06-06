@@ -1,0 +1,694 @@
+[0m[1mmodule.dependencies.random_string.catalog_db_master: Refreshing state... [id=7lC7meVMdu][0m
+[0m[1mmodule.dependencies.random_string.orders_db_master: Refreshing state... [id=6L4u6xoRX7][0m
+[0m[1mmodule.dependencies.random_password.mq_password: Refreshing state... [id=none][0m
+[0m[1mmodule.dependencies.random_string.catalog_opensearch_master: Refreshing state... [id=8MtWeS#VXs][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.random_bytes.this: Refreshing state...[0m
+[0m[1mmodule.retail_app_eks.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.vpc.data.aws_availability_zones.available: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_eks_node_group.this[0] (deposed object cca049db): Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-1-2026060519192244260000002e][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.aws_elasticache_parameter_group.default[0]: Refreshing state... [id=retail-store-checkout][0m
+[0m[1mmodule.retail_app_eks.data.aws_region.current: Read complete after 0s [id=us-east-1][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/eks/project-bedrock-cluster/cluster][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_eks_node_group.this[0] (deposed object fbf6001f): Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-2-20260605191922443200000032][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_eks_node_group.this[0] (deposed object 43475013): Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-3-20260605191922442600000030][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.dependencies.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_caller_identity.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_caller_identity.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.data.aws_caller_identity.current: Read complete after 0s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_partition.current[0]: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_caller_identity.current[0]: Read complete after 0s [id=099875620094][0m
+[0m[1mmodule.dependencies.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.data.aws_region.current: Read complete after 0s [id=us-east-1][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_partition.current[0]: Reading...[0m[0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_partition.current[0]: Read complete after 0s [id=aws][0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_region.current: Read complete after 0s [id=us-east-1][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_region.current[0]: Reading...[0m[0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_region.current[0]: Read complete after 0s [id=us-east-1][0m
+[0m[1mmodule.dependencies.module.dynamodb_carts.aws_dynamodb_table.this[0]: Refreshing state... [id=retail-store-carts][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_partition.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_partition.current[0]: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_caller_identity.current[0]: Read complete after 0s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.dependencies.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.vpc.data.aws_availability_zones.available: Read complete after 1s [id=us-east-1][0m
+[0m[1mmodule.vpc.module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0b51d5c3e0ba9788b][0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_partition.current[0]: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_iam_session_context.current[0]: Reading...[0m[0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.data.aws_iam_session_context.current[0]: Read complete after 0s [id=arn:aws:iam::099875620094:user/ADMINOTO][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_iam_session_context.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_iam_session_context.current: Read complete after 0s [id=arn:aws:iam::099875620094:user/ADMINOTO][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_iam_policy_document.cert_manager[0]: Read complete after 0s [id=3416383923][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2764486067][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.data.aws_iam_policy_document.aws_load_balancer_controller[0]: Read complete after 0s [id=481461162][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_role.this[0]: Refreshing state... [id=project-bedrock-cluster-cluster-20260605190409438900000005][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=3416383923][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::099875620094:policy/cert-manager-20260605190409466200000006][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_caller_identity.current[0]: Read complete after 2s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=481461162][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_policy.this[0]: Refreshing state... [id=arn:aws:iam::099875620094:policy/alb-controller-20260605190417241000000007][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_caller_identity.current[0]: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-064c2b38c9d3e22cb][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-07f3340364902963c][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-09d9757fa5c9c07ea][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0215d21ad5cea379f][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-03c77c656e11ca473][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-082c3c369f57fdb48][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[2]: Refreshing state... [id=subnet-02ce868b5062c37d7][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-07bc28c1632d53547][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-0cf9302fd6e4927a6][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[2]: Refreshing state... [id=subnet-0be6c9e5a284bd65a][0m
+[0m[1mmodule.vpc.module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-0ef7033d20ce39c18][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-05306e1ecfabe9e0c][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_role_policy_attachment.this["AmazonEKSClusterPolicy"]: Refreshing state... [id=project-bedrock-cluster-cluster-20260605190409438900000005-20260605190435706800000008][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_role_policy_attachment.this["AmazonEKSVPCResourceController"]: Refreshing state... [id=project-bedrock-cluster-cluster-20260605190409438900000005-20260605190435706800000009][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_iam_policy_document.this[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.data.aws_iam_policy_document.this[0]: Read complete after 0s [id=367084631][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.aws_kms_key.this[0]: Refreshing state... [id=d69f92ae-2726-469e-9dc0-5a2f6ef9a9f0][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-01dd4e440e955a427][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[2]: Refreshing state... [id=rtbassoc-087c2f09aaa60983f][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0498b4ed1d1e9ca52][0m
+[0m[1mmodule.vpc.module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-06d8713f406ee5bca][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0215d21ad5cea379f1080289494][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-097ec1d0a1738034a][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0f3a3c12849935438][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[2]: Refreshing state... [id=rtbassoc-0065470b70b20c13b][0m
+[0m[1mmodule.vpc.module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-02d2d660b941fb09f][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-05306e1ecfabe9e0c1080289494][0m
+[0m[1mmodule.dependencies.aws_db_subnet_group.orders: Refreshing state... [id=retail-store-orders-rds][0m
+[0m[1mmodule.dependencies.aws_security_group.catalog_opensearch_sg: Refreshing state... [id=sg-0ea9d3008b5e8bfc1][0m
+[0m[1maws_security_group.checkout: Refreshing state... [id=sg-0eedaf76c0cd513c0][0m
+[0m[1maws_security_group.catalog: Refreshing state... [id=sg-07e68bfa4ba51e67e][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group.cluster[0]: Refreshing state... [id=sg-0c7d59e12935548a3][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.dependencies.aws_db_subnet_group.catalog: Refreshing state... [id=retail-store-catalog-rds][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_caller_identity.current: Read complete after 0s [id=099875620094][0m
+[0m[1maws_security_group.orders: Refreshing state... [id=sg-059dccfd7dc27f94c][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_caller_identity.current: Read complete after 0s [id=099875620094][0m
+[0m[1mmodule.dependencies.aws_security_group.orders_rds: Refreshing state... [id=sg-0c4fb124c0ac0053f][0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.aws_elasticache_subnet_group.default[0]: Refreshing state... [id=retail-store-checkout][0m
+[0m[1mmodule.dependencies.aws_security_group.catalog_rds: Refreshing state... [id=sg-05701168fa575fba4][0m
+[0m[1mmodule.dependencies.aws_security_group.mq: Refreshing state... [id=sg-065b7c4a74a03a86c][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group.node[0]: Refreshing state... [id=sg-092edebc666b17dd4][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.dependencies.aws_iam_policy.carts_dynamo: Refreshing state... [id=arn:aws:iam::099875620094:policy/retail-store-carts-dynamo][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=2560088296][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_iam_role.this[0]: Refreshing state... [id=managed-nodegroup-3-eks-node-group-20260605190833497500000014][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.aws_opensearch_domain.this[0]: Refreshing state... [id=arn:aws:es:us-east-1:099875620094:domain/retail-store-catalog][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_iam_role.this[0]: Refreshing state... [id=managed-nodegroup-1-eks-node-group-20260605190836343700000016][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_iam_role.this[0]: Refreshing state... [id=managed-nodegroup-2-eks-node-group-20260605190834888200000015][0m
+[0m[1mmodule.dependencies.aws_mq_broker.mq: Refreshing state... [id=b-eeaee531-9d4b-4b47-97fb-2f79ed14755b][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].data.aws_caller_identity.current: Read complete after 1s [id=099875620094][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_4443_webhook"]: Refreshing state... [id=sgrule-1052517973][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_self_coredns_udp"]: Refreshing state... [id=sgrule-2727286524][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_self_coredns_tcp"]: Refreshing state... [id=sgrule-114341139][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_443"]: Refreshing state... [id=sgrule-631254236][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_to_node_all_traffic"]: Refreshing state... [id=sgrule-2530124712][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_self_all"]: Refreshing state... [id=sgrule-872650172][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_8443_webhook"]: Refreshing state... [id=sgrule-3835854306][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_nodes_ephemeral"]: Refreshing state... [id=sgrule-3878115512][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_9443_webhook"]: Refreshing state... [id=sgrule-2147700265][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["egress_all"]: Refreshing state... [id=sgrule-2279473486][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_6443_webhook"]: Refreshing state... [id=sgrule-4160635331][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.node["ingress_cluster_kubelet"]: Refreshing state... [id=sgrule-2404262107][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.kms.aws_kms_alias.this["cluster"]: Refreshing state... [id=alias/eks/project-bedrock-cluster][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_security_group_rule.cluster["ingress_nodes_443"]: Refreshing state... [id=sgrule-3148622938][0m
+[0m[1mmodule.retail_app_eks.aws_security_group_rule.dns_tcp: Refreshing state... [id=sgrule-1944960294][0m
+[0m[1mmodule.retail_app_eks.aws_security_group_rule.dns_udp: Refreshing state... [id=sgrule-2222014639][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_policy.cluster_encryption[0]: Refreshing state... [id=arn:aws:iam::099875620094:policy/project-bedrock-cluster-cluster-ClusterEncryption2026060519054150860000000d][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=managed-nodegroup-2-eks-node-group-20260605190834888200000015-20260605190838298500000017][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=managed-nodegroup-2-eks-node-group-20260605190834888200000015-2026060519084431430000001b][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=managed-nodegroup-1-eks-node-group-20260605190836343700000016-2026060519084431020000001a][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=managed-nodegroup-3-eks-node-group-20260605190833497500000014-20260605190845166600000020][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=managed-nodegroup-2-eks-node-group-20260605190834888200000015-2026060519084516660000001f][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]: Refreshing state... [id=managed-nodegroup-3-eks-node-group-20260605190833497500000014-2026060519084431900000001c][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=managed-nodegroup-1-eks-node-group-20260605190836343700000016-20260605190844295800000019][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]: Refreshing state... [id=managed-nodegroup-1-eks-node-group-20260605190836343700000016-2026060519084463200000001d][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]: Refreshing state... [id=managed-nodegroup-3-eks-node-group-20260605190833497500000014-20260605190844277000000018][0m
+[0m[1mmodule.dependencies.aws_security_group_rule.orders_rds_ingress: Refreshing state... [id=sgrule-2565916393][0m
+[0m[1mmodule.dependencies.aws_security_group_rule.allow_https_from_client: Refreshing state... [id=sgrule-3249735440][0m
+[0m[1mmodule.dependencies.aws_security_group_rule.catalog_rds_ingress: Refreshing state... [id=sgrule-1470229499][0m
+[0m[1mmodule.dependencies.aws_security_group_rule.mq[0]: Refreshing state... [id=sgrule-927415754][0m
+[0m[1mmodule.dependencies.aws_db_instance.catalog_db: Refreshing state... [id=db-HOCXWRJDJC7AJF4WAOWJYV4WHA][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_eks_cluster.this[0]: Refreshing state... [id=project-bedrock-cluster][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_role_policy_attachment.cluster_encryption[0]: Refreshing state... [id=project-bedrock-cluster-cluster-20260605190409438900000005-2026060519054573960000000e][0m
+[0m[1mmodule.dependencies.module.catalog_opensearch.aws_opensearch_domain_policy.this[0]: Refreshing state... [id=esd-policy-retail-store-catalog][0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.module.aws_security_group.aws_security_group.cbd[0]: Refreshing state... [id=sg-0856e32d0f0e7f1c1][0m
+[0m[1mmodule.dependencies.aws_db_instance.orders_db: Refreshing state... [id=db-FFQPR52BDMNTPZA7MZZSHBMVNI][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_ec2_tag.cluster_primary_security_group["created-by"]: Refreshing state... [id=sg-0d75b416763fb8aaf,created-by][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.tls_certificate.this[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.time_sleep.this[0]: Refreshing state... [id=2026-06-05T19:19:11Z][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_ec2_tag.cluster_primary_security_group["Project"]: Refreshing state... [id=sg-0d75b416763fb8aaf,Project][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_ec2_tag.cluster_primary_security_group["environment-name"]: Refreshing state... [id=sg-0d75b416763fb8aaf,environment-name][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_eks_addon_version.this["vpc-cni"]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.aws_cloudformation_stack.usage_telemetry[0]: Refreshing state... [id=arn:aws:cloudformation:us-east-1:099875620094:stack/project-bedrock-cluster-253b/5fb0ef20-6113-11f1-b0a6-0e2eda018ee5][0m
+[0m[1mdata.aws_eks_cluster_auth.cluster: Reading...[0m[0m
+[0m[1mdata.aws_eks_cluster_auth.cluster: Read complete after 0s [id=project-bedrock-cluster][0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.module.aws_security_group.aws_security_group_rule.keyed["_allow_all_egress_"]: Refreshing state... [id=sgrule-306339106][0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.module.aws_security_group.aws_security_group_rule.keyed["in#in#sg#0"]: Refreshing state... [id=sgrule-150898867][0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_iam_policy_document.assume_role_with_oidc[0]: Reading...[0m[0m
+[0m[1mmodule.iam_assumable_role_carts.data.aws_iam_policy_document.assume_role_with_oidc[0]: Read complete after 0s [id=2983379298][0m
+[0m[1mmodule.dependencies.module.checkout_elasticache_redis.aws_elasticache_replication_group.default[0]: Refreshing state... [id=retail-store-checkout][0m
+[0m[1mmodule.iam_assumable_role_carts.aws_iam_role.this[0]: Refreshing state... [id=retail-store-carts-dynamo][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_launch_template.this[0]: Refreshing state... [id=lt-0f08580b3fe7124e2][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_launch_template.this[0]: Refreshing state... [id=lt-0d8638576660c72d0][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.aws_eks_addon_version.this["vpc-cni"]: Read complete after 1s [id=vpc-cni][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_launch_template.this[0]: Refreshing state... [id=lt-062631d0a1e774af5][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_eks_addon.before_compute["vpc-cni"]: Refreshing state... [id=project-bedrock-cluster:vpc-cni][0m
+[0m[1mmodule.iam_assumable_role_carts.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=retail-store-carts-dynamo-20260605191844258700000023][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.data.tls_certificate.this[0]: Read complete after 2s [id=b1b539daa206035ae3c3e28288b0681fa1b462f3][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.aws_iam_openid_connect_provider.oidc_provider[0]: Refreshing state... [id=arn:aws:iam::099875620094:oidc-provider/oidc.eks.us-east-1.amazonaws.com/id/7288279B53E5D19052E3AC62F62F5592][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.time_sleep.this: Refreshing state... [id=2026-06-05T19:19:13Z][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.assume[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.data.aws_iam_policy_document.assume[0]: Read complete after 0s [id=519197254][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.data.aws_iam_policy_document.assume[0]: Read complete after 0s [id=691005693][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role.this[0]: Refreshing state... [id=alb-controller-20260605191914738900000025][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.aws_iam_role.this[0]: Refreshing state... [id=cert-manager-20260605191914734000000024][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_eks_node_group.this[0]: Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-3-20260606041828559100000004][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_eks_node_group.this[0]: Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-1-20260606041828559100000003][0m
+[0m[1mmodule.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_eks_node_group.this[0]: Refreshing state... [id=project-bedrock-cluster:managed-nodegroup-2-20260606041828559100000001][0m
+[0m[1mmodule.retail_app_eks.null_resource.cluster_blocker: Refreshing state... [id=6246902849088104048][0m
+[0m[1mnull_resource.cluster_blocker: Refreshing state... [id=5830119062265203302][0m
+[0m[1mdata.aws_eks_cluster_auth.this: Reading...[0m[0m
+[0m[1mdata.aws_eks_cluster_auth.this: Read complete after 0s [id=project-bedrock-cluster][0m
+[0m[1mmodule.retail_app_eks.kubernetes_namespace_v1.adot: Refreshing state... [id=opentelemetry-operator-system][0m
+[0m[1mmodule.retail_app_eks.kubernetes_cluster_role_binding_v1.adot: Refreshing state... [id=eks:addon-manager-otel][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=alb-controller-20260605191914738900000025-2026060519191636090000002d][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.aws_load_balancer_controller.helm_release.this[0]: Refreshing state... [id=aws-load-balancer-controller][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.aws_iam_role_policy_attachment.this[0]: Refreshing state... [id=cert-manager-20260605191914734000000024-2026060519191633040000002c][0m
+[0m[1mmodule.retail_app_eks.module.eks_blueprints_addons.module.cert_manager.helm_release.this[0]: Refreshing state... [id=cert-manager][0m
+[0m[1mmodule.retail_app_eks.kubernetes_role_binding_v1.adot: Refreshing state... [id=opentelemetry-operator-system/eks:addon-manager][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_iam_policy_document.assume_role_with_oidc[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_iam_policy_document.assume_role_with_oidc[0]: Reading...[0m[0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.data.aws_iam_policy_document.assume_role_with_oidc[0]: Read complete after 0s [id=3067457826][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.data.aws_iam_policy_document.assume_role_with_oidc[0]: Read complete after 0s [id=2138321672][0m
+[0m[1mmodule.retail_app_eks.kubernetes_role_v1.adot: Refreshing state... [id=opentelemetry-operator-system/eks:addon-manager][0m
+[0m[1mmodule.retail_app_eks.kubernetes_cluster_role_v1.adot: Refreshing state... [id=eks:addon-manager-otel][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.aws_iam_role.this[0]: Refreshing state... [id=retail-store-adot-col-xray][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.aws_iam_role.this[0]: Refreshing state... [id=retail-store-adot-col-logs][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_amp.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=retail-store-adot-col-xray-20260606042027434600000007][0m
+[0m[1mmodule.retail_app_eks.module.iam_assumable_role_adot_logs.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=retail-store-adot-col-logs-20260606042027739300000008][0m
+[0m[1mmodule.retail_app_eks.time_sleep.addons: Refreshing state... [id=2026-06-06T04:22:29Z][0m
+[0m[1mmodule.retail_app_eks.aws_eks_addon.adot: Refreshing state... [id=project-bedrock-cluster:adot][0m
+[0m[1mmodule.retail_app_eks.null_resource.addons_blocker: Refreshing state... [id=4152290191884114219][0m
+[0m[1mnull_resource.addons_blocker: Refreshing state... [id=7265827252809861718][0m
+[0m[1mtime_sleep.workloads: Refreshing state... [id=2026-06-06T04:23:08Z][0m
+[0m[1mdata.kubernetes_nodes.vpc_ready_nodes: Reading...[0m[0m
+[0m[1mdata.kubernetes_nodes.vpc_ready_nodes: Read complete after 1s [id=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855][0m
+[0m[1mkubernetes_namespace_v1.catalog: Refreshing state... [id=catalog][0m
+[0m[1mkubernetes_namespace_v1.carts: Refreshing state... [id=carts][0m
+[0m[1mkubernetes_namespace_v1.checkout: Refreshing state... [id=checkout][0m
+[0m[1mkubernetes_namespace_v1.orders: Refreshing state... [id=orders][0m
+[0m[1mkubernetes_namespace_v1.ui: Refreshing state... [id=ui][0m
+[0m[1mhelm_release.carts: Refreshing state... [id=carts][0m
+[0m[1mhelm_release.checkout: Refreshing state... [id=checkout][0m
+[0m[1mhelm_release.catalog: Refreshing state... [id=catalog][0m
+[0m[1mhelm_release.orders: Refreshing state... [id=orders][0m
+[0m[1mhelm_release.ui: Refreshing state... [id=ui][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [33m~[0m update in-place[0m
+  [31m-[0m destroy[0m
+[31m-[0m/[32m+[0m destroy and then create replacement[0m
+ [36m<=[0m read (data resources)[0m
+
+Terraform will perform the following actions:
+
+[1m  # data.kubernetes_service.ui_service[0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "kubernetes_service" "ui_service" {
+      [32m+[0m[0m id     = (known after apply)
+      [32m+[0m[0m spec   = (known after apply)
+      [32m+[0m[0m status = (known after apply)
+
+      [32m+[0m[0m metadata {
+          [32m+[0m[0m generation       = (known after apply)
+          [32m+[0m[0m name             = "ui"
+          [32m+[0m[0m namespace        = "ui"
+          [32m+[0m[0m resource_version = (known after apply)
+          [32m+[0m[0m uid              = (known after apply)
+        }
+    }
+
+[1m  # helm_release.ui[0m is tainted, so must be [1m[31mreplaced[0m
+[0m[31m-[0m/[32m+[0m[0m resource "helm_release" "ui" {
+      [33m~[0m[0m id                         = "ui" -> (known after apply)
+      [32m+[0m[0m manifest                   = (known after apply)
+      [33m~[0m[0m metadata                   = [
+          [31m-[0m[0m {
+              [31m-[0m[0m chart          = "retail-store-sample-ui-chart"
+              [31m-[0m[0m first_deployed = 1780747876
+              [31m-[0m[0m last_deployed  = 1780747876
+              [31m-[0m[0m name           = "ui"
+              [31m-[0m[0m namespace      = "ui"
+              [31m-[0m[0m notes          = <<-EOT
+                    1. Get the application URL by running these commands:
+                         NOTE: It may take a few minutes for the LoadBalancer IP to be available.
+                               You can watch the status of by running 'kubectl get --namespace ui svc -w ui'
+                      export SERVICE_IP=$(kubectl get svc --namespace ui ui --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+                      echo http://$SERVICE_IP:80
+                EOT
+              [31m-[0m[0m revision       = 1
+              [31m-[0m[0m values         = jsonencode(
+                    {
+                      [31m-[0m[0m app     = {
+                          [31m-[0m[0m endpoints = {
+                              [31m-[0m[0m carts    = "http://carts.carts.svc:80"
+                              [31m-[0m[0m catalog  = "http://catalog.catalog.svc:80"
+                              [31m-[0m[0m checkout = "http://checkout.checkout.svc:80"
+                              [31m-[0m[0m orders   = "http://orders.orders.svc:80"
+                            }
+                          [31m-[0m[0m search    = {
+                              [31m-[0m[0m enabled = true
+                            }
+                        }
+                      [31m-[0m[0m image   = {
+                          [31m-[0m[0m repository = "public.ecr.aws/aws-containers/retail-store-sample-ui"
+                          [31m-[0m[0m tag        = "1.6.1"
+                        }
+                      [31m-[0m[0m service = {
+                          [31m-[0m[0m annotations = {
+                              [31m-[0m[0m "service.beta.kubernetes.io/aws-load-balancer-attributes"      = "load_balancing.cross_zone.enabled=true"
+                              [31m-[0m[0m "service.beta.kubernetes.io/aws-load-balancer-nlb-target-type" = "ip"
+                              [31m-[0m[0m "service.beta.kubernetes.io/aws-load-balancer-scheme"          = "internet-facing"
+                              [31m-[0m[0m "service.beta.kubernetes.io/aws-load-balancer-type"            = "external"
+                            }
+                          [31m-[0m[0m type        = "LoadBalancer"
+                        }
+                    }
+                )
+              [31m-[0m[0m version        = "1.6.1"
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] -> (known after apply)
+        name                       = "ui"
+      [33m~[0m[0m status                     = "failed" [33m->[0m[0m "deployed"
+        [90m# (25 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # null_resource.restart_pods[0m will be created
+[0m  [32m+[0m[0m resource "null_resource" "restart_pods" {
+      [32m+[0m[0m id       = (known after apply)
+      [32m+[0m[0m triggers = {
+          [32m+[0m[0m "opentelemetry_enabled" = "false"
+        }
+    }
+
+[1m  # time_sleep.restart_pods[0m will be created
+[0m  [32m+[0m[0m resource "time_sleep" "restart_pods" {
+      [32m+[0m[0m create_duration = "30s"
+      [32m+[0m[0m id              = (known after apply)
+      [32m+[0m[0m triggers        = {
+          [32m+[0m[0m "opentelemetry_enabled" = "false"
+        }
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.private[0][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "private" {
+        id                                             = "subnet-07bc28c1632d53547"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-private-us-east-1a"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/internal-elb"               = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.private[1][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "private" {
+        id                                             = "subnet-0cf9302fd6e4927a6"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-private-us-east-1b"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/internal-elb"               = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.private[2][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "private" {
+        id                                             = "subnet-0be6c9e5a284bd65a"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-private-us-east-1c"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/internal-elb"               = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.public[0][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "public" {
+        id                                             = "subnet-03c77c656e11ca473"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-public-us-east-1a"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/elb"                        = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.public[1][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "public" {
+        id                                             = "subnet-082c3c369f57fdb48"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-public-us-east-1b"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/elb"                        = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.module.vpc.aws_subnet.public[2][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "public" {
+        id                                             = "subnet-02ce868b5062c37d7"
+      [33m~[0m[0m tags                                           = {
+            "Name"                                          = "retail-store-public-us-east-1c"
+            "Project"                                       = "karatu-2025-capstone"
+            "created-by"                                    = "retail-store-sample-app"
+            "environment-name"                              = "retail-store"
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            "kubernetes.io/cluster/retail-store"            = "shared"
+            "kubernetes.io/role/elb"                        = "1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [31m-[0m[0m "kubernetes.io/cluster/project-bedrock-cluster" = "shared" [90m-> null[0m[0m
+            [90m# (6 unchanged elements hidden)[0m[0m
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_1"].aws_eks_node_group.this[0] (deposed object cca049db)[0m will be [1m[31mdestroyed[0m
+  # (left over from a partially-failed replacement of this instance)
+[0m  [31m-[0m[0m resource "aws_eks_node_group" "this" {
+      [31m-[0m[0m ami_type               = "AL2023_x86_64_STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m arn                    = "arn:aws:eks:us-east-1:099875620094:nodegroup/project-bedrock-cluster/managed-nodegroup-1-2026060519192244260000002e/accf4c9c-e9af-98d5-7840-e58ce356814e" [90m-> null[0m[0m
+      [31m-[0m[0m capacity_type          = "ON_DEMAND" [90m-> null[0m[0m
+      [31m-[0m[0m cluster_name           = "project-bedrock-cluster" [90m-> null[0m[0m
+      [31m-[0m[0m disk_size              = 0 [90m-> null[0m[0m
+      [31m-[0m[0m force_update_version   = true [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "project-bedrock-cluster:managed-nodegroup-1-2026060519192244260000002e" [90m-> null[0m[0m
+      [31m-[0m[0m instance_types         = [
+          [31m-[0m[0m "m5.large",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m labels                 = {} [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name        = "managed-nodegroup-1-2026060519192244260000002e" [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name_prefix = "managed-nodegroup-1-" [90m-> null[0m[0m
+      [31m-[0m[0m node_role_arn          = "arn:aws:iam::099875620094:role/managed-nodegroup-1-eks-node-group-20260605190836343700000016" [90m-> null[0m[0m
+      [31m-[0m[0m release_version        = "1.34.8-20260527" [90m-> null[0m[0m
+      [31m-[0m[0m resources              = [
+          [31m-[0m[0m {
+              [31m-[0m[0m autoscaling_groups              = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m name = "eks-managed-nodegroup-1-2026060519192244260000002e-accf4c9c-e9af-98d5-7840-e58ce356814e"
+                    },
+                ]
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m status                 = "CREATE_FAILED" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_ids             = [
+          [31m-[0m[0m "subnet-07bc28c1632d53547",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-1"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-1"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m version                = "1.34" [90m-> null[0m[0m
+
+      [31m-[0m[0m launch_template {
+          [31m-[0m[0m id      = "lt-0f08580b3fe7124e2" [90m-> null[0m[0m
+          [31m-[0m[0m name    = "node_group_1-20260605191914753400000028" [90m-> null[0m[0m
+          [31m-[0m[0m version = "1" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m scaling_config {
+          [31m-[0m[0m desired_size = 1 [90m-> null[0m[0m
+          [31m-[0m[0m max_size     = 3 [90m-> null[0m[0m
+          [31m-[0m[0m min_size     = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+
+      [31m-[0m[0m update_config {
+          [31m-[0m[0m max_unavailable            = 0 [90m-> null[0m[0m
+          [31m-[0m[0m max_unavailable_percentage = 33 [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_2"].aws_eks_node_group.this[0] (deposed object fbf6001f)[0m will be [1m[31mdestroyed[0m
+  # (left over from a partially-failed replacement of this instance)
+[0m  [31m-[0m[0m resource "aws_eks_node_group" "this" {
+      [31m-[0m[0m ami_type               = "AL2023_x86_64_STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m arn                    = "arn:aws:eks:us-east-1:099875620094:nodegroup/project-bedrock-cluster/managed-nodegroup-2-20260605191922443200000032/d0cf4c9c-e9b3-c545-e9dc-3a589c0c7922" [90m-> null[0m[0m
+      [31m-[0m[0m capacity_type          = "ON_DEMAND" [90m-> null[0m[0m
+      [31m-[0m[0m cluster_name           = "project-bedrock-cluster" [90m-> null[0m[0m
+      [31m-[0m[0m disk_size              = 0 [90m-> null[0m[0m
+      [31m-[0m[0m force_update_version   = true [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "project-bedrock-cluster:managed-nodegroup-2-20260605191922443200000032" [90m-> null[0m[0m
+      [31m-[0m[0m instance_types         = [
+          [31m-[0m[0m "m5.large",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m labels                 = {} [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name        = "managed-nodegroup-2-20260605191922443200000032" [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name_prefix = "managed-nodegroup-2-" [90m-> null[0m[0m
+      [31m-[0m[0m node_role_arn          = "arn:aws:iam::099875620094:role/managed-nodegroup-2-eks-node-group-20260605190834888200000015" [90m-> null[0m[0m
+      [31m-[0m[0m release_version        = "1.34.8-20260527" [90m-> null[0m[0m
+      [31m-[0m[0m resources              = [
+          [31m-[0m[0m {
+              [31m-[0m[0m autoscaling_groups              = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m name = "eks-managed-nodegroup-2-20260605191922443200000032-d0cf4c9c-e9b3-c545-e9dc-3a589c0c7922"
+                    },
+                ]
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m status                 = "CREATE_FAILED" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_ids             = [
+          [31m-[0m[0m "subnet-0cf9302fd6e4927a6",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-2"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-2"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m version                = "1.34" [90m-> null[0m[0m
+
+      [31m-[0m[0m launch_template {
+          [31m-[0m[0m id      = "lt-0d8638576660c72d0" [90m-> null[0m[0m
+          [31m-[0m[0m name    = "node_group_2-20260605191914752300000026" [90m-> null[0m[0m
+          [31m-[0m[0m version = "1" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m scaling_config {
+          [31m-[0m[0m desired_size = 1 [90m-> null[0m[0m
+          [31m-[0m[0m max_size     = 3 [90m-> null[0m[0m
+          [31m-[0m[0m min_size     = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+
+      [31m-[0m[0m update_config {
+          [31m-[0m[0m max_unavailable            = 0 [90m-> null[0m[0m
+          [31m-[0m[0m max_unavailable_percentage = 33 [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.retail_app_eks.module.eks_cluster.module.eks_managed_node_group["node_group_3"].aws_eks_node_group.this[0] (deposed object 43475013)[0m will be [1m[31mdestroyed[0m
+  # (left over from a partially-failed replacement of this instance)
+[0m  [31m-[0m[0m resource "aws_eks_node_group" "this" {
+      [31m-[0m[0m ami_type               = "AL2023_x86_64_STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m arn                    = "arn:aws:eks:us-east-1:099875620094:nodegroup/project-bedrock-cluster/managed-nodegroup-3-20260605191922442600000030/12cf4c9c-e9b5-41d6-2ff0-3d9790ef08fd" [90m-> null[0m[0m
+      [31m-[0m[0m capacity_type          = "ON_DEMAND" [90m-> null[0m[0m
+      [31m-[0m[0m cluster_name           = "project-bedrock-cluster" [90m-> null[0m[0m
+      [31m-[0m[0m disk_size              = 0 [90m-> null[0m[0m
+      [31m-[0m[0m force_update_version   = true [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "project-bedrock-cluster:managed-nodegroup-3-20260605191922442600000030" [90m-> null[0m[0m
+      [31m-[0m[0m instance_types         = [
+          [31m-[0m[0m "m5.large",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m labels                 = {} [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name        = "managed-nodegroup-3-20260605191922442600000030" [90m-> null[0m[0m
+      [31m-[0m[0m node_group_name_prefix = "managed-nodegroup-3-" [90m-> null[0m[0m
+      [31m-[0m[0m node_role_arn          = "arn:aws:iam::099875620094:role/managed-nodegroup-3-eks-node-group-20260605190833497500000014" [90m-> null[0m[0m
+      [31m-[0m[0m release_version        = "1.34.8-20260527" [90m-> null[0m[0m
+      [31m-[0m[0m resources              = [
+          [31m-[0m[0m {
+              [31m-[0m[0m autoscaling_groups              = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m name = "eks-managed-nodegroup-3-20260605191922442600000030-12cf4c9c-e9b5-41d6-2ff0-3d9790ef08fd"
+                    },
+                ]
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m status                 = "CREATE_FAILED" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_ids             = [
+          [31m-[0m[0m "subnet-0be6c9e5a284bd65a",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-3"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"             = "managed-nodegroup-3"
+          [31m-[0m[0m "Project"          = "karatu-2025-capstone"
+          [31m-[0m[0m "created-by"       = "retail-store-sample-app"
+          [31m-[0m[0m "environment-name" = "retail-store"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m version                = "1.34" [90m-> null[0m[0m
+
+      [31m-[0m[0m launch_template {
+          [31m-[0m[0m id      = "lt-062631d0a1e774af5" [90m-> null[0m[0m
+          [31m-[0m[0m name    = "node_group_3-2026060519191475340000002a" [90m-> null[0m[0m
+          [31m-[0m[0m version = "1" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m scaling_config {
+          [31m-[0m[0m desired_size = 1 [90m-> null[0m[0m
+          [31m-[0m[0m max_size     = 3 [90m-> null[0m[0m
+          [31m-[0m[0m min_size     = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+
+      [31m-[0m[0m update_config {
+          [31m-[0m[0m max_unavailable            = 0 [90m-> null[0m[0m
+          [31m-[0m[0m max_unavailable_percentage = 33 [90m-> null[0m[0m
+        }
+    }
+
+[1mPlan:[0m [0m3 to add, 6 to change, 4 to destroy.
+
+Changes to Outputs:
+  [33m~[0m[0m retail_app_url     = "LoadBalancer provisioning - run: kubectl get svc -n ui ui" -> (known after apply)
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  with module.retail_app_eks.module.eks_cluster.aws_iam_role.this[0],
+[33m│[0m [0m  on .terraform\modules\retail_app_eks.eks_cluster\main.tf line 293, in resource "aws_iam_role" "this":
+[33m│[0m [0m 293: resource "aws_iam_role" "this" [4m{[0m[0m
+[33m│[0m [0m
+[33m│[0m [0minline_policy is deprecated. Use the aws_iam_role_policy resource instead. If Terraform should exclusively manage all inline policy associations (the current behavior of this argument), use the
+[33m│[0m [0maws_iam_role_policies_exclusive resource as well.
+[33m│[0m [0m
+[33m│[0m [0m(and one more similar warning elsewhere)
+[33m╵[0m[0m
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mDeprecated value used[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  on .terraform\modules\retail_app_eks.eks_cluster\outputs.tf line 146, in output "cluster_addons":
+[33m│[0m [0m 146:   value       = [4mmerge(aws_eks_addon.this, aws_eks_addon.before_compute)[0m[0m
+[33m│[0m [0m
+[33m│[0m [0m  The deprecation originates from module.retail_app_eks.module.eks_cluster.aws_eks_addon.before_compute["vpc-cni"].resolve_conflicts
+[33m│[0m [0m
+[33m│[0m [0mDeprecated resource attribute "resolve_conflicts" used. Refer to the provider documentation for details.
+[33m╵[0m[0m
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

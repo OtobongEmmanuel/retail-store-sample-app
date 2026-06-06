@@ -1,0 +1,14 @@
+NAMESPACE                       NAME                                TYPE           CLUSTER-IP       EXTERNAL-IP                                                         PORT(S)                  AGE
+carts                           carts                               ClusterIP      172.20.85.164    <none>                                                              80/TCP                   11h
+catalog                         catalog                             ClusterIP      172.20.226.84    <none>                                                              80/TCP                   4h41m
+cert-manager                    cert-manager                        ClusterIP      172.20.103.233   <none>                                                              9402/TCP                 11h
+cert-manager                    cert-manager-webhook                ClusterIP      172.20.62.177    <none>                                                              443/TCP                  11h
+checkout                        checkout                            ClusterIP      172.20.81.131    <none>                                                              80/TCP                   11h
+default                         kubernetes                          ClusterIP      172.20.0.1       <none>                                                              443/TCP                  20h
+kube-system                     aws-load-balancer-webhook-service   ClusterIP      172.20.164.120   <none>                                                              443/TCP                  11h
+kube-system                     eks-extension-metrics-api           ClusterIP      172.20.132.132   <none>                                                              443/TCP                  20h
+kube-system                     kube-dns                            ClusterIP      172.20.0.10      <none>                                                              53/UDP,53/TCP,9153/TCP   20h
+opentelemetry-operator-system   opentelemetry-operator              ClusterIP      172.20.100.139   <none>                                                              8443/TCP                 11h
+opentelemetry-operator-system   opentelemetry-operator-webhook      ClusterIP      172.20.207.120   <none>                                                              443/TCP                  11h
+orders                          orders                              ClusterIP      172.20.198.64    <none>                                                              80/TCP                   4h41m
+ui                              ui                                  LoadBalancer   172.20.46.169    k8s-ui-ui-6b7a7300e1-0f6f463309c190e6.elb.us-east-1.amazonaws.com   80:30683/TCP             3h39m
