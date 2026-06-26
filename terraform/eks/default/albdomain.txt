@@ -1,2 +1,0 @@
-NAME   TYPE           CLUSTER-IP      EXTERNAL-IP                                                         PORT(S)        AGE
-ui     LoadBalancer   172.20.46.169   k8s-ui-ui-6b7a7300e1-0f6f463309c190e6.elb.us-east-1.amazonaws.com   80:30683/TCP   3h47m
