@@ -1,180 +1,497 @@
-![Banner](./docs/images/banner.png)
+# Project Bedrock Capstone – AWS Retail Store Sample Application
 
-<div align="center">
-  <div align="center">
+> **AltSchool Africa – School of Engineering (Cloud Engineering) Capstone Project**
 
-[![Stars](https://img.shields.io/github/stars/aws-containers/retail-store-sample-app)](Stars)
-![GitHub License](https://img.shields.io/github/license/aws-containers/retail-store-sample-app?color=green)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Faws-containers%2Fretail-store-sample-app%2Frefs%2Fheads%2Fmain%2F.release-please-manifest.json&query=%24%5B%22.%22%5D&label=release)
-![GitHub Release Date](https://img.shields.io/github/release-date/aws-containers/retail-store-sample-app)
+---
 
-  </div>
+# Student Information
 
-  <strong>
-  <h2>AWS Containers Retail Sample</h2>
-  </strong>
-</div>
+**Student Name:** Otobong Emmanuel Sunday
 
-This is a sample application designed to illustrate various concepts related to containers on AWS. It presents a sample retail store application including a product catalog, shopping cart and checkout.
+**Student ID:** ALT/SOE/025/4655
 
-It provides:
+**Project Name:** Project Bedrock
 
-- A demo store-front application with themes, pages to show container and application topology information, generative AI chat bot and utility functions for experimentation and demos.
-- An optional distributed component architecture using various languages and frameworks
-- A variety of different persistence backends for the various components like MariaDB (or MySQL), DynamoDB and Redis
-- The ability to run in different container orchestration technologies like Docker Compose, Kubernetes etc.
-- Pre-built container images for both x86-64 and ARM64 CPU architectures
-- All components instrumented for Prometheus metrics and OpenTelemetry OTLP tracing
-- Support for Istio on Kubernetes
-- Load generator which exercises all of the infrastructure
+**AWS Region:** us-east-1 (N. Virginia)
 
-See the [features documentation](./docs/features.md) for more information.
+**Deployment Date:** June 2026
 
-**This project is intended for educational purposes only and not for production use**
+---
 
-![Screenshot](/docs/images/screenshot.png)
+# Project Overview
 
-## Application Architecture
+Project Bedrock is a production-style deployment of the AWS Retail Store Sample Application using Infrastructure as Code (Terraform) on Amazon Web Services.
 
-The application has been deliberately over-engineered to generate multiple de-coupled components. These components generally have different infrastructure dependencies, and may support multiple "backends" (example: Carts service supports MongoDB or DynamoDB).
+The project provisions a complete cloud-native environment consisting of:
 
-![Architecture](/docs/images/architecture.png)
+* Amazon EKS Cluster
+* Custom VPC
+* Amazon RDS (MySQL & PostgreSQL)
+* Amazon ElastiCache Redis
+* Amazon DynamoDB
+* Amazon OpenSearch
+* Amazon S3
+* AWS Lambda
+* AWS Load Balancer Controller
+* Kubernetes
+* Helm
+* CloudWatch Logging
 
-| Component                  | Language | Container Image                                                             | Helm Chart                                                                        | Description                             |
-| -------------------------- | -------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------- |
-| [UI](./src/ui/)            | Java     | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-ui)       | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-ui-chart)       | Store user interface                    |
-| [Catalog](./src/catalog/)  | Go       | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-catalog)  | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-catalog-chart)  | Product catalog API                     |
-| [Cart](./src/cart/)        | Java     | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-cart)     | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-cart-chart)     | User shopping carts API                 |
-| [Orders](./src/orders)     | Java     | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-orders)   | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-orders-chart)   | User orders API                         |
-| [Checkout](./src/checkout) | Node     | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-checkout) | [Link](https://gallery.ecr.aws/aws-containers/retail-store-sample-checkout-chart) | API to orchestrate the checkout process |
+The objective of the project was to demonstrate the ability to provision, deploy, troubleshoot, and manage cloud infrastructure using Terraform while following AWS best practices.
 
-## Quickstart
+---
 
-The following sections provide quickstart instructions for various platforms.
-
-### Docker
-
-This deployment method will run the application as a single container on your local machine using `docker`.
-
-Pre-requisites:
-
-- Docker installed locally
-
-Run the container:
+# Architecture
 
 ```
-docker run -it --rm -p 8888:8080 public.ecr.aws/aws-containers/retail-store-sample-ui:1.0.0
+                    Internet
+                        │
+                        ▼
+             Network Load Balancer
+                        │
+                        ▼
+               Amazon EKS Cluster
+          project-bedrock-cluster
+                        │
+ ┌──────────────┬──────────────┬──────────────┬──────────────┐
+ ▼              ▼              ▼              ▼              ▼
+UI           Catalog        Orders        Checkout        Carts
+ │               │              │              │              │
+ ▼               ▼              ▼              ▼              ▼
+OpenSearch     MySQL       PostgreSQL       Redis       DynamoDB
+                        │
+                        ▼
+                  Amazon S3 Assets
+                        │
+                        ▼
+                     AWS Lambda
+                        │
+                        ▼
+                  Amazon CloudWatch
 ```
 
-Open the frontend in a browser window:
+---
+
+# Technologies Used
+
+## Infrastructure
+
+* Terraform
+* AWS CLI
+* Git
+* GitHub
+
+## AWS Services
+
+* Amazon EKS
+* Amazon EC2
+* Amazon VPC
+* Amazon IAM
+* Amazon RDS
+* Amazon DynamoDB
+* Amazon OpenSearch
+* Amazon ElastiCache Redis
+* Amazon S3
+* AWS Lambda
+* CloudWatch
+* Elastic Load Balancer
+
+## Kubernetes
+
+* Kubernetes
+* Helm
+* AWS Load Balancer Controller
+* kubectl
+
+---
+
+# Infrastructure Provisioned
+
+## Amazon EKS
+
+| Property           | Value                   |
+| ------------------ | ----------------------- |
+| Cluster Name       | project-bedrock-cluster |
+| Region             | us-east-1               |
+| Kubernetes Version | 1.34                    |
+| Worker Nodes       | 3                       |
+| Deployment         | Terraform               |
+
+---
+
+## Networking
+
+Resources provisioned:
+
+* Custom VPC
+* Public Subnets
+* Private Subnets
+* Internet Gateway
+* NAT Gateway
+* Route Tables
+* Security Groups
+
+All networking resources are managed entirely through Terraform.
+
+---
+
+## Databases
+
+### Catalog Database
+
+Engine:
+
+* MySQL 8
+
+Purpose:
+
+* Product catalog
+
+---
+
+### Orders Database
+
+Engine:
+
+* PostgreSQL
+
+Purpose:
+
+* Customer orders
+
+---
+
+### Other Data Stores
+
+* DynamoDB
+* ElastiCache Redis
+* Amazon OpenSearch
+
+---
+
+# Kubernetes Workloads
+
+Successfully deployed microservices:
+
+* UI
+* Catalog
+* Orders
+* Checkout
+* Carts
+
+Additional supporting services:
+
+* AWS Load Balancer Controller
+* cert-manager
+* OpenTelemetry Operator
+
+All pods reached **Running** state.
+
+---
+
+# Public Application
+
+Application URL
 
 ```
-http://localhost:8888
+http://k8s-ui-ui-519a3d99b3-9294fd8c5a474400.elb.us-east-1.amazonaws.com
 ```
 
-To stop the container in `docker` use Ctrl+C.
+---
 
-### Docker Compose
+# Assets Bucket
 
-This deployment method will run the application on your local machine using `docker-compose`.
-
-Pre-requisites:
-
-- Docker installed locally
-
-Download the latest Docker Compose file and use `docker compose` to run the application containers:
+Bucket Name
 
 ```
-wget https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/docker-compose.yaml
-
-DB_PASSWORD='<some password>' docker compose --file docker-compose.yaml up
+bedrock-assets-1-alt-soe-025-4655
 ```
 
-Open the frontend in a browser window:
+Configuration:
+
+* Private Bucket
+* Versioning Enabled
+* Public Access Blocked
+* Lambda Notification Enabled
+
+---
+
+# Lambda Integration
+
+Function Name
 
 ```
-http://localhost:8888
+bedrock-asset-processor
 ```
 
-To stop the containers in `docker compose` use Ctrl+C. To delete all the containers and related resources run:
+Trigger
+
+* Amazon S3 ObjectCreated Event
+
+Purpose
+
+* Process uploaded assets
+* Log upload events to CloudWatch
+
+---
+
+# IAM
+
+Developer User
 
 ```
-docker compose -f docker-compose.yaml down
+bedrock-dev-view
 ```
 
-### Kubernetes
+Policy
 
-This deployment method will run the application in an existing Kubernetes cluster.
+* Upload access to project assets bucket
 
-Pre-requisites:
+---
 
-- Kubernetes cluster
-- `kubectl` installed locally
+# Terraform Outputs
 
-Use `kubectl` to run the application:
+The root module exposes the following outputs:
+
+* cluster_name
+* cluster_endpoint
+* region
+* vpc_id
+* assets_bucket_name
+* retail_app_url
+
+---
+
+# Resource Tagging
+
+All infrastructure resources are tagged using:
 
 ```
-kubectl apply -f https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/kubernetes.yaml
-kubectl wait --for=condition=available deployments --all
+Project = karatu-2025-capstone
 ```
 
-Get the URL for the frontend load balancer like so:
+Additional tags include:
+
+* created-by
+* environment-name
+
+---
+
+# Repository Structure
 
 ```
-kubectl get svc ui
+terraform/
+    eks/
+        default/
+
+lib/
+
+src/
+
+helm/
+
+values/
+
+README.md
+grading.json
 ```
 
-To remove the application use `kubectl` again:
+---
+
+# Deployment Steps
+
+1. Clone repository
 
 ```
-kubectl delete -f https://github.com/aws-containers/retail-store-sample-app/releases/latest/download/kubernetes.yaml
+git clone <repository-url>
 ```
 
-### Terraform
+2. Navigate to Terraform configuration
 
-The following options are available to deploy the application using Terraform:
+```
+cd terraform/eks/default
+```
 
-| Name                                             | Description                                                                                                     |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| [Amazon EKS](./terraform/eks/default/)           | Deploys the application to Amazon EKS using other AWS services for dependencies, such as RDS, DynamoDB etc.     |
-| [Amazon EKS (Minimal)](./terraform/eks/minimal/) | Deploys the application to Amazon EKS using in-cluster dependencies instead of RDS, DynamoDB etc.               |
-| [Amazon ECS](./terraform/ecs/default/)           | Deploys the application to Amazon ECS using other AWS services for dependencies, such as RDS, DynamoDB etc.     |
-| [AWS App Runner](./terraform/apprunner/)         | Deploys the application to AWS App Runner using other AWS services for dependencies, such as RDS, DynamoDB etc. |
+3. Initialize Terraform
 
-## Security
+```
+terraform init
+```
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+4. Review infrastructure
 
-## License
+```
+terraform plan
+```
 
-This project is licensed under the MIT-0 License.
+5. Deploy infrastructure
 
-This package depends on and may incorporate or retrieve a number of third-party
-software packages (such as open source packages) at install-time or build-time
-or run-time ("External Dependencies"). The External Dependencies are subject to
-license terms that you must accept in order to use this package. If you do not
-accept all of the applicable license terms, you should not use this package. We
-recommend that you consult your company’s open source approval policy before
-proceeding.
+```
+terraform apply
+```
 
-Provided below is a list of External Dependencies and the applicable license
-identification as indicated by the documentation associated with the External
-Dependencies as of Amazon's most recent review.
+6. Configure kubectl
 
-THIS INFORMATION IS PROVIDED FOR CONVENIENCE ONLY. AMAZON DOES NOT PROMISE THAT
-THE LIST OR THE APPLICABLE TERMS AND CONDITIONS ARE COMPLETE, ACCURATE, OR
-UP-TO-DATE, AND AMAZON WILL HAVE NO LIABILITY FOR ANY INACCURACIES. YOU SHOULD
-CONSULT THE DOWNLOAD SITES FOR THE EXTERNAL DEPENDENCIES FOR THE MOST COMPLETE
-AND UP-TO-DATE LICENSING INFORMATION.
+```
+aws eks update-kubeconfig \
+--region us-east-1 \
+--name project-bedrock-cluster
+```
 
-YOUR USE OF THE EXTERNAL DEPENDENCIES IS AT YOUR SOLE RISK. IN NO EVENT WILL
-AMAZON BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT,
-INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR PUNITIVE DAMAGES (INCLUDING
-FOR ANY LOSS OF GOODWILL, BUSINESS INTERRUPTION, LOST PROFITS OR DATA, OR
-COMPUTER FAILURE OR MALFUNCTION) ARISING FROM OR RELATING TO THE EXTERNAL
-DEPENDENCIES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, EVEN
-IF AMAZON HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THESE LIMITATIONS
-AND DISCLAIMERS APPLY EXCEPT TO THE EXTENT PROHIBITED BY APPLICABLE LAW.
+7. Verify cluster
 
-MariaDB Community License - [LICENSE](https://mariadb.com/kb/en/mariadb-licenses/)
-MySQL Community Edition - [LICENSE](https://github.com/mysql/mysql-server/blob/8.0/LICENSE)
+```
+kubectl get nodes
+kubectl get pods -A
+```
+
+8. Retrieve application URL
+
+```
+kubectl get svc -n ui
+```
+
+---
+
+# Challenges Encountered
+
+## RDS Connectivity
+
+Problem
+
+Pods could not connect to MySQL and PostgreSQL.
+
+Resolution
+
+Updated Terraform security group rules to reference the EKS worker node security group.
+
+---
+
+## OpenSearch
+
+Problem
+
+OpenSearch domain creation initially failed because the required service-linked role was unavailable.
+
+Resolution
+
+Verified the AWS service-linked role and re-ran Terraform successfully.
+
+---
+
+## Load Balancer
+
+Problem
+
+The UI service remained in the Pending state.
+
+Resolution
+
+Corrected subnet tagging and validated the AWS Load Balancer Controller configuration. The Network Load Balancer was successfully provisioned.
+
+---
+
+## Helm Deployment
+
+Problem
+
+The UI Helm release entered a failed state due to provisioning timeouts.
+
+Resolution
+
+Re-applied the Helm release after the infrastructure stabilized.
+
+---
+
+## Lambda
+
+Problem
+
+Initial testing produced a KeyError because the Lambda function was manually invoked without an S3 event payload.
+
+Resolution
+
+Verified bucket notifications, Lambda permissions, and CloudWatch log group creation. S3 event integration was successfully configured.
+
+---
+
+# Validation
+
+The following checks were completed successfully:
+
+✅ Terraform Apply
+
+✅ Amazon EKS Cluster Active
+
+✅ Worker Nodes Ready
+
+✅ All Kubernetes Pods Running
+
+✅ Load Balancer Provisioned
+
+✅ Public Application Accessible
+
+✅ MySQL Operational
+
+✅ PostgreSQL Operational
+
+✅ OpenSearch Operational
+
+✅ Redis Operational
+
+✅ DynamoDB Operational
+
+✅ Assets Bucket Created
+
+✅ Lambda Function Created
+
+✅ CloudWatch Log Group Created
+
+✅ Terraform Outputs Generated
+
+---
+
+# Skills Demonstrated
+
+* Infrastructure as Code (Terraform)
+* Amazon Web Services
+* Amazon EKS
+* Kubernetes Administration
+* Helm Deployments
+* Cloud Networking
+* IAM
+* Security Groups
+* Amazon RDS
+* Amazon OpenSearch
+* Amazon S3
+* AWS Lambda
+* CloudWatch
+* Troubleshooting Production Infrastructure
+* Git Version Control
+
+---
+
+# Screenshots
+
+Include screenshots of:
+
+* AWS Console Dashboard
+* Terraform Apply
+* EKS Cluster
+* EC2 Worker Nodes
+* Kubernetes Pods
+* RDS Databases
+* OpenSearch
+* DynamoDB
+* Redis
+* S3 Bucket
+* Lambda Function
+* CloudWatch Logs
+* Load Balancer
+* Running Retail Store Application
+
+---
+
+# Conclusion
+
+This capstone project demonstrates the successful deployment of a production-style cloud-native retail application on AWS using Terraform and Kubernetes. The infrastructure includes networking, compute, managed databases, storage, search, caching, identity management, serverless integration, monitoring, and load balancing, showcasing end-to-end cloud engineering skills and operational troubleshooting throughout the deployment lifecycle.
