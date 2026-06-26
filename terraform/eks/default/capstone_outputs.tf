@@ -20,5 +20,5 @@ output "region" {
 
 output "assets_bucket_name" {
   description = "Assets Bucket Name"
-  value       = "bedrock-assets-alt-soe-025-4655"
+  value       = aws_s3_bucket.assets.bucket
 }
